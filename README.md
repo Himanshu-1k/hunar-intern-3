@@ -1,1 +1,1 @@
-# hunar-intern-3
+The clone version of Netflix streaming platform using html,css and javascript
