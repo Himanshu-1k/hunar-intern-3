@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Trailer Container Example</title>
+<style>body{
+
+width:100%;
+height:100%;
+background-color:#333; /* Light gray background */
+font-family:'arial', sans-serif;
+display:flex;
+align-items:center;
+justify-content:center; 
+}
+
+header {
+position:relative;
+padding:10px;
+width:1000px;
+height:800px;
+background-color:black;
+border: 1px solid #ccc; 
+border-radius: 20px;
+overflow:auto;
+box-shadow:0px 10px 25px -8px ;
+color:white;
+text-align:center;
+justify-content:center;
+display:inline;
+}
+nav {
+position:absolute;
+width:100%;
+height:10%;
+
+display: flex;
+align-items: center;
+justify-content:space-between;
+z-index:3;
+left:-3px;
+padding:20px;
+}.logo{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.logo img
+{
+display:transparent;
+width:100px;
+}
+.logo ul{
+list-style:none;
+display:flex;
+align-items:center;
+justify-content:center;}
+.logo ul li{
+padding: 3px 15px;}
+.logo ul li a{
+text decoration:none;
+color:white;
+font size:12px;
+font-weight:bold;
+
+}
+.logo ul li a:hover{
+
+color:gray;
+
+}
+header::-webkit-scrollbar{
+display:none;}
+.searchbar{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;}
+
+.searchbar input{
+padding: 3px 10px;
+border-radius:20px;
+border:none;
+outline:none;
+background:rgb(255,255,255,.3);
+color:white;
+margin-right:10px;
+overflow-y:auto;
+
+}
+.searchbar input::placeholder{
+color:white;
+}
+.searchbar img{
+width:20px;
+height:23px;
+border-radius:50%;}
+h2{
+top:20px;}
+.vcc  {
+padding:20px;}
+</style>
+</head>
+<body> 
+<header>
+
+<nav>
+<div class="logo">
+             
+       <img src="C:\Users\Himanshu ketaki\Downloads\net.logo.png" alt="Netflix Logo">
+        <ul><li>
+<a href="netflixmovies.html">Home</a></li> 
+<li>
+<a href="series.html">Series</a></li>
+<li>
+<a href="film.html">Movies</a></li>
+<li>
+<a href="kids.html">Kids</a></li>
+</ul>
+ </div>
+<div class="searchbar">
+<input type="text" placeholder="search" id="search_input">
+<img src="C:\Users\Himanshu ketaki\Desktop\img\hk.jpg.jpg"></div>
+
+</nav>
+
+    <div class="vcc">
+        
+        <iframe width="700" height="450" src="C:\Users\Himanshu ketaki\Pictures\newhk\VID-20240620-WA0005.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+<div class="last">
+<h2><b>The Boys</b></h2>
+<h3>Action,2019</h3>
+<p>Superheroes are often as popular as celebrities, as influential as politicians, and sometimes even as revered as gods. But that's when they're using their powers for good. What happens when the heroes go rogue and start abusing their powers? When it's the powerless against the super powerful, the Boys head out on a heroic quest to expose the truth about the Seven and Vought, the multibillion-dollar conglomerate that manages the superheroes and covers up their dirty secrets. Based on the comic book series of the same name.
+</p>
+</header>
+</body>
+</html>
