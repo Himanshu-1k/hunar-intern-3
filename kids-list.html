@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie List</title>
+  <style>
+    /* Basic CSS for styling */
+  *{
+padding:0px;
+margin:0px;
+box-sizing:border-box;
+}
+
+body{
+
+width:100%;
+height:100%;
+background-color:black; /* Light gray background */
+font-family:'arial', sans-serif;
+display:flex;
+align-items:center;
+justify-content:center; 
+}
+
+header {
+position:relative;
+padding:10px;
+width:1000px;
+height:800px;
+background-color:dark gray;
+border: 1px solid #ccc; 
+border-radius: 20px;
+overflow:auto;
+box-shadow:0px 10px 25px -8px ;
+color:white;
+text-align:center;
+justify-content:center;
+display:inline;
+}
+nav {
+position:absolute;
+width:100%;
+height:10%;
+
+display: flex;
+align-items: center;
+justify-content:space-between;
+z-index:3;
+left:-3px;
+padding:20px;
+}.logo{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.logo img
+{
+display:transparent;
+width:100px;
+}
+.logo ul{
+list-style:none;
+display:flex;
+align-items:center;
+justify-content:center;}
+.logo ul li{
+padding: 3px 15px;}
+.logo ul li a{
+text decoration:none;
+color:white;
+font size:12px;
+font-weight:bold;
+
+}
+.logo ul li a:hover{
+
+color:gray;
+
+}
+header::-webkit-scrollbar{
+display:none;}
+.searchbar{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;}
+
+.searchbar input{
+padding: 3px 10px;
+border-radius:20px;
+border:none;
+outline:none;
+background:rgb(255,255,255,.3);
+color:white;
+margin-right:10px;
+overflow-y:auto;
+
+}
+.searchbar input::placeholder{
+color:white;
+}
+.searchbar img{
+width:20px;
+height:23px;
+border-radius:50%;}
+
+
+.cards
+{
+padding:20px 50px ;
+border:1px solid white;
+
+width:100%;
+height:150%;;
+
+top:20px;
+display:inline;
+align-items:center;
+justify-content:center;
+overflow-y:auto;
+}
+.cards::-webkit-scrollbar{
+display:none;}
+}
+ .cad{
+position:absolute;
+min-width:50%;
+height:90%;
+border:1px solid #fff;
+align:items:center;
+margin-right:10px;
+border-radius:8px;
+
+background:white;
+overflow:auto;
+display:inline;
+}
+
+
+.poster{
+top:50px;
+left:35%;
+width:300px;
+height:300px;
+border-radius:8px;
+position:relative;
+display:flex;
+vertical-align:center;}
+.conty{
+top:50px;
+position:relative;
+width:100%;
+align-items:center;
+
+
+color:#fff;
+padding:0px 40px;
+
+}
+.conty .sub{
+color:white;}
+.conty h4{
+color:white;}
+.conty .sub span{
+background:yellow;
+color:white;}
+
+  </style>
+</head>
+<body>
+<header><nav>
+<div class="logo">
+             
+       <img src="C:\Users\Himanshu ketaki\Downloads\net.logo.png" alt="Netflix Logo">
+        <ul><li>
+<a href="netflixmovies.html">Home</a></li> 
+<li>
+<a href="series.html">Series</a></li>
+<li>
+<a href="film.html">Movies</a></li>
+<li>
+<a href="kids.html">Kids</a></li>
+</ul>
+ </div>
+<div class="searchbar">
+<input type="text" placeholder="search" id="search_input">
+<img src="C:\Users\Himanshu ketaki\Desktop\img\hk.jpg.jpg"></nav>
+
+
+  <div id="cards">
+<a href="#" class="cad">
+<img src= "C:\Users\Himanshu ketaki\Downloads\ben 10.jpg"class="poster">
+
+<div class="conty">
+<h4>Ben 10</h4>
+<div class="sub">
+<p>Action,2009</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.2</b>
+
+</div>
+</div></a>
+</div><div id="cards">
+<a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\kung fu panda.jpg"class="poster">
+
+<div class="conty">
+<h4>Kung Fu Panda</h4>
+<div class="sub">
+<p>Com/action,2016</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>7.4</b>
+</div>
+</div>
+</a></div>
+
+<div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\my hero academia.jpg"class="poster">
+
+<div class="conty">
+<h4>My Hero Academia</h4>
+<div class="sub">
+<p>Action,school,2016</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.9</b>
+</div>
+</div>
+</a>
+</div>
+<div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\jk.jpg" class="poster">
+
+<div class="conty">
+<h4>Jujutsu Kaisen</h4>
+<div class="sub">
+<p>Action,2022</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.6</b>
+</div>
+</div>
+</a></div><div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\haikyu.jpg"class="poster">
+
+<div class="conty">
+<h4>Haikyuu</h4>
+<div class="sub">
+<p>Sports,2021</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.8</b>
+</div>
+</div>
+</a></div><div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\lookism.jpg" class="poster">
+
+<div class="conty">
+<h4>Lookism</h4>
+<div class="sub">
+<p>Com/Drama,2023</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.2</b>
+</div>
+</div></a></div><div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\one piece.jpg"class="poster">
+
+
+<div class="conty">
+<h4>One Piece</h4>
+<div class="sub">
+<p>Action,2008</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.8</b>
+</div>
+</div>
+</a></div><div id="cards"><a href="#" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\jurassic park camp.jpg" class="poster">
+
+<div class="conty">
+<h4>Jurassic Park Camp</h4>
+<div class="sub">
+<p>Anime,2023</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>8.1</b>
+</div>
+</div>
+</a></div><div id="cards"><a href="tor.html" class="cad">
+<img src="C:\Users\Himanshu ketaki\Downloads\thor.rag.jpeg"class="poster">
+
+<div class="conty">
+<h4>Record of Ragnarok</h4>
+<div class="sub">
+<p>Manga series,2021</p>
+<h3><span>IMDB</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+</svg><b>7.8</b>
+</div>
+</div>
+
+
+</a>
+</div>
+
+</header>
+
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
